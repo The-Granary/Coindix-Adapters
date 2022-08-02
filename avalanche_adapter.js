@@ -1,7 +1,7 @@
 const ethers = require("ethers");
 import { abi } from "./abis/AaveProtocolDataProvider.json";
 
-class GranaryFantom {
+class GranaryAvalanche {
     static async sync() {
         const provider = new ethers.providers.JsonRpcProvider("https://rpc.ankr.com/avalanche");
         const CONTRACT_ADDRESS =  "0xed984A0E9c12Ee27602314191Fc4487A702bB83f";
@@ -28,4 +28,4 @@ class GranaryFantom {
     }
 }
 
-module.exports = GranaryFantom;
+module.exports = GranaryAvalanche;
